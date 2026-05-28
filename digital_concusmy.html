@@ -459,16 +459,16 @@
             }
         });
 
-        // 二维码生成
-        const qrcodeContainer = document.getElementById('qrcode');
-        new QRCode(qrcodeContainer, {
-            text: window.location.href,
-            width: 128,
-            height: 128,
-            colorDark: "#165DFF",
-            colorLight: "#ffffff",
-            correctLevel: QRCode.CorrectLevel.H
-        });
+        // 二维码生成（已改成你的Streamlit网址）
+const qrcodeContainer = document.getElementById('qrcode');
+new QRCode(qrcodeContainer, {
+    text: "https://2awbilocgrdhjbvtv3jdae.streamlit.app",
+    width: 128,
+    height: 128,
+    colorDark: "#165DFF",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+});
 
         // ========== 【新增】智能问答助手逻辑 ==========
         const chatBox = document.getElementById('chatBox');
